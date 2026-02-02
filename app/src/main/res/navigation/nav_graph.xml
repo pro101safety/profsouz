@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="by.instruction.profsouz.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_leadership"
+        android:name="by.instruction.profsouz.ui.staticpages.LeadershipFragment"
+        android:label="@string/menu_leadership"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_official_info"
+        android:name="by.instruction.profsouz.ui.staticpages.OfficialInfoFragment"
+        android:label="@string/menu_official_info"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_belchas"
+        android:name="by.instruction.profsouz.ui.staticpages.BelchasFragment"
+        android:label="@string/menu_belchas"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_fpb"
+        android:name="by.instruction.profsouz.ui.fpb.FpbFragment"
+        android:label="@string/menu_fpb"
+        tools:layout="@layout/fragment_info_list" />
+
+    <fragment
+        android:id="@+id/nav_unions"
+        android:name="by.instruction.profsouz.ui.unions.UnionsFragment"
+        android:label="@string/menu_unions"
+        tools:layout="@layout/fragment_info_list" />
+
+    <fragment
+        android:id="@+id/nav_tourism"
+        android:name="by.instruction.profsouz.ui.tourism.TourismFragment"
+        android:label="@string/menu_tourism"
+        tools:layout="@layout/fragment_info_list" />
+
+    <fragment
+        android:id="@+id/nav_reception_schedule"
+        android:name="by.instruction.profsouz.ui.staticpages.ReceptionScheduleFragment"
+        android:label="@string/menu_reception_schedule"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_documents_catalog"
+        android:name="by.instruction.profsouz.ui.staticpages.DocumentsCatalogFragment"
+        android:label="@string/menu_documents_catalog"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_legal_aid"
+        android:name="by.instruction.profsouz.ui.staticpages.LegalAidFragment"
+        android:label="@string/menu_legal_aid"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_property"
+        android:name="by.instruction.profsouz.ui.ownership.OwnershipFragment"
+        android:label="@string/menu_property"
+        tools:layout="@layout/fragment_info_list" />
+
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="by.instruction.profsouz.ui.staticpages.ContactsFragment"
+        android:label="@string/menu_contacts"
+        tools:layout="@layout/fragment_contacts" />
+
+    <fragment
+        android:id="@+id/nav_privacy"
+        android:name="by.instruction.profsouz.ui.staticpages.PrivacyFragment"
+        android:label="@string/menu_privacy"
+        tools:layout="@layout/fragment_text" />
+</navigation>

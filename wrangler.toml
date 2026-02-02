@@ -1,0 +1,11 @@
+name = "fpb-aggregator"
+# Cloudflare Worker config (kept for possible rollback).
+main = "cloudflare-worker.js"
+compatibility_date = "2025-11-18"
+
+kv_namespaces = [
+  { binding = "FPB_CACHE", id = "bc9b30e4-b3a7-4051-8597-5ef902a44c98" }
+]
+
+[triggers]
+crons = [ "0 */6 * * *" ]

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="by.instruction.profsouz.MainActivity">
+    <item
+        android:id="@+id/action_radio_narodnoe"
+        android:orderInCategory="10"
+        android:title="@string/menu_radio_narodnoe"
+        android:contentDescription="@string/menu_radio_narodnoe"
+        app:actionLayout="@layout/action_radio_item_narodnoe"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_radio_novoe"
+        android:orderInCategory="11"
+        android:title="@string/menu_radio_novoe"
+        android:contentDescription="@string/menu_radio_novoe"
+        app:actionLayout="@layout/action_radio_item_novoe"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_contacts"
+        android:orderInCategory="100"
+        android:title="@string/menu_contacts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_privacy"
+        android:orderInCategory="101"
+        android:title="@string/menu_privacy"
+        app:showAsAction="never" />
+</menu>

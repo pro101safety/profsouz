@@ -1,0 +1,68 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_leadership"
+        android:title="@string/menu_leadership" />
+    <item
+        android:id="@+id/menu_divider_leadership"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_official_info"
+        android:title="@string/menu_official_info" />
+    <item
+        android:id="@+id/menu_divider_official_info"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_belchas"
+        android:title="@string/menu_belchas" />
+    <item
+        android:id="@+id/menu_divider_belchas"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_fpb"
+        android:title="@string/menu_fpb" />
+    <item
+        android:id="@+id/menu_divider_fpb"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_unions"
+        android:title="@string/menu_unions" />
+    <item
+        android:id="@+id/menu_divider_unions"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_tourism"
+        android:title="@string/menu_tourism" />
+    <item
+        android:id="@+id/menu_divider_tourism"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_reception_schedule"
+        android:title="@string/menu_reception_schedule" />
+    <item
+        android:id="@+id/menu_divider_reception_schedule"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_documents_catalog"
+        android:title="@string/menu_documents_catalog" />
+    <item
+        android:id="@+id/menu_divider_documents_catalog"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_legal_aid"
+        android:title="@string/menu_legal_aid" />
+    <item
+        android:id="@+id/menu_divider_legal_aid"
+        android:enabled="false"
+        android:actionLayout="@layout/menu_divider" />
+    <item
+        android:id="@+id/nav_property"
+        android:title="@string/menu_property" />
+</menu>

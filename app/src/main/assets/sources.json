@@ -1,0 +1,10 @@
+{
+  "fpbStructureUrl": "https://fpb.1prof.by/organizacionnaya-struktura-fpb/",
+  "fpbMembersUrl": "https://fpb.1prof.by/members/",
+  "tourismUrl": "https://fpb.1prof.by/tourism-places/gostinicy/",
+  "newsUrl": "https://1prof.by/",
+  "notes": [
+    "Official Telegram links are parsed from FPB structure and members pages.",
+    "This file documents source endpoints for the aggregator."
+  ]
+}

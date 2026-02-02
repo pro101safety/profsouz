@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">МОЙ ПРОФСОЮЗ</string>
+    <string name="menu_home">Новости 1prof.by</string>
+    <string name="menu_home_drawer">Всё о ФПБ</string>
+    <string name="menu_leadership">Руководство ФПБ</string>
+    <string name="menu_official_info">Официальная информация</string>
+    <string name="menu_belchas">Газета «Беларускi Час»</string>
+    <string name="menu_fpb">Областные объединения</string>
+    <string name="menu_unions">Отраслевые профсоюзы</string>
+    <string name="menu_tourism">Туризм и отдых</string>
+    <string name="menu_reception_schedule">График личного приема граждан ФПБ</string>
+    <string name="menu_documents_catalog">Каталог документов</string>
+    <string name="menu_legal_aid">Бесплатная юридическая помощь</string>
+    <string name="drawer_contacts_title">КОНТАКТЫ ФПБ</string>
+    <string name="drawer_contacts_body">Адрес: 220126, Минск, пр. Победителей, 21\nВремя работы: Пн-чт: 08.30–17.30\nПт: 08.30–16.15\nТелефон: +375 17 263 90 31\nФакс: +375 17 373 43 37\nПресс-служба: +375 17 350 89 93\nE-mail: contact@fpb.by\nЮридическая консультация: +375 17 373 82 94\nМежотраслевой мониторинговый центр ФПБ: 8-801-100-1111</string>
+    <string name="menu_property">Собственность ФПБ</string>
+    <string name="menu_contacts">Контакты</string>
+    <string name="menu_privacy">Политика конфиденциальности</string>
+    <string name="menu_radio_narodnoe">Народное радио</string>
+    <string name="menu_radio_novoe">Новое радио</string>
+    <string name="menu_radio_label">Радио</string>
+    <string name="splash_tagline">МЫ ВМЕСТЕ</string>
+
+    <string name="contacts_text">Контакты Федерации профсоюзов Беларуси:\nМинск, пр. Победителей, 21\nТел: +375 17 263 90 31\nФакс: +375 17 373 43 37\nE-mail: contact@fpb.by</string>
+    <string name="privacy_text">Политика конфиденциальности будет добавлена. Приложение получает данные из открытых источников и не запрашивает персональные данные без необходимости.</string>
+</resources>

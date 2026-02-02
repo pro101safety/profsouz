@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PROFSOUZ" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/fpb_blue</item>
+        <item name="colorOnPrimary">@color/fpb_on_primary</item>
+        <item name="colorPrimaryContainer">@color/fpb_blue_container</item>
+        <item name="colorOnPrimaryContainer">@color/fpb_on_background</item>
+
+        <item name="colorSecondary">@color/fpb_blue_light</item>
+        <item name="colorOnSecondary">@color/fpb_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/fpb_blue_container</item>
+        <item name="colorOnSecondaryContainer">@color/fpb_on_background</item>
+
+        <item name="colorTertiary">@color/fpb_blue_light</item>
+        <item name="colorOnTertiary">@color/fpb_on_secondary</item>
+
+        <item name="android:colorBackground">@color/fpb_background</item>
+        <item name="colorSurface">@color/fpb_surface</item>
+        <item name="colorOnSurface">@color/fpb_on_surface</item>
+    </style>
+
+    <style name="Theme.PROFSOUZ" parent="Base.Theme.PROFSOUZ" />
+</resources>
