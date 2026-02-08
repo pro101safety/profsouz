@@ -1,11 +1,40 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
 }
+
+val keystorePropsFile = rootProject.file("keystore.properties")
+val keystoreProps = Properties()
+if (keystorePropsFile.exists()) {
+    FileInputStream(keystorePropsFile).use { keystoreProps.load(it) }
+}
+
+val storeFilePath = keystoreProps.getProperty("storeFile")
+val storePassword = keystoreProps.getProperty("storePassword")
+val keyAlias = keystoreProps.getProperty("keyAlias")
+val keyPassword = keystoreProps.getProperty("keyPassword")
+val hasSigning = !storeFilePath.isNullOrBlank()
+    && !storePassword.isNullOrBlank()
+    && !keyAlias.isNullOrBlank()
+    && !keyPassword.isNullOrBlank()
 
 android {
     namespace = "by.instruction.profsouz"
     compileSdk {
         version = release(36)
+    }
+
+    if (hasSigning) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(storeFilePath)
+                storePassword = storePassword
+                keyAlias = keyAlias
+                keyPassword = keyPassword
+            }
+        }
     }
 
     defaultConfig {
@@ -21,6 +50,9 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            if (hasSigning) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

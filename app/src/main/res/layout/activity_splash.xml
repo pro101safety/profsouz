@@ -9,10 +9,13 @@
 
     <ImageView
         android:id="@+id/splash_logo"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:contentDescription="@null"
-        android:src="@mipmap/ic_launcher" />
+        android:layerType="software"
+        android:scaleType="centerInside"
+        android:src="@drawable/fpb_logo" />
 
     <TextView
         android:id="@+id/splash_tagline"

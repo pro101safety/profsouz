@@ -5,13 +5,11 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -55,15 +53,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         } else {
             holder.summary.setVisibility(View.VISIBLE);
             holder.summary.setText(item.getSummary());
-        }
-        if (item.getImageUrl() == null || item.getImageUrl().trim().isEmpty()) {
-            holder.image.setVisibility(View.GONE);
-        } else {
-            holder.image.setVisibility(View.VISIBLE);
-            Glide.with(holder.image.getContext())
-                    .load(item.getImageUrl())
-                    .centerCrop()
-                    .into(holder.image);
         }
         holder.date.setVisibility(View.GONE);
         holder.itemView.setOnClickListener(v -> {
@@ -121,11 +110,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         final TextView source;
         final TextView date;
         final TextView summary;
-        final ImageView image;
-
         NewsViewHolder(@NonNull View itemView) {
             super(itemView);
-            image = itemView.findViewById(R.id.news_image);
             title = itemView.findViewById(R.id.news_title);
             source = itemView.findViewById(R.id.news_source);
             date = itemView.findViewById(R.id.news_date);

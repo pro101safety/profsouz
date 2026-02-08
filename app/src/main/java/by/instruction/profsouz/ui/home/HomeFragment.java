@@ -51,6 +51,7 @@ public class HomeFragment extends Fragment {
 
         viewModel = new ViewModelProvider(this).get(NewsViewModel.class);
         viewModel.getNews().observe(getViewLifecycleOwner(), newsAdapter::submit);
+        viewModel.refresh();
     }
 
     @Override
